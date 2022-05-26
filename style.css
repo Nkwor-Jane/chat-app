@@ -1,0 +1,303 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+:root{
+    /* Text */
+    /* (sub-heading at the top of the app UI) */
+    --paleViolet: hsl(276, 100%, 81%);
+    /* (chat on the left) */
+    --moderateViolet: hsl(276, 55%, 52%);
+    /* (chat on the right) */
+    --desaturatedDarkViolet: hsl(271, 15%, 43%);
+    /*  (placeholder text) */
+    --grayishBlue: hsl(206, 6%, 79%);
+    /* (main heading) */
+    --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    /* (main heading) */
+    --darkGrayishViolet: hsl(270, 7%, 64%);
+    
+    /* Gradients */
+    
+    /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+    
+    --lightMagenta: hsl(293, 100%, 63%);
+    --lightViolet: hsl(264, 100%, 61%);
+    
+    /* Secondary */
+    
+    --White: hsl(0, 0%, 100%);
+    /*  (app background) */
+    --lightGrayishViolet: hsl(270, 20%, 96%);
+    /*  (submit button background)*/
+    --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    /*  (radio button outline) */
+    --veryLightMagenta: hsl(289, 100%, 72%);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.65;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;  
+    background-color: var(--lightGrayishViolet);
+    position: relative;
+}
+.gradient{
+        height: 600px;
+        width: 20%;
+        background-color: var(--lightMagenta);
+        background-image:
+          linear-gradient( to top right,
+            var(--lightMagenta), var(--lightViolet)
+          );
+        border-bottom-right-radius:500px;
+}
+
+.gradient2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 600px;
+    width: 20%;
+    background-color: var(--lightMagenta);
+    background-image:
+      linear-gradient(
+        var(--lightMagenta), var(--lightViolet)
+      );
+    border-top-left-radius:500px;
+    opacity: 0.1;
+}
+.column{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.column p{
+    text-align: justify;
+    line-height: 1.7;
+    word-spacing: 0.2em;
+    color: var(--darkGrayishViolet);
+}
+.column h1{
+  color: var(--veryDarkDesaturatedViolet);
+}
+/* icons */
+i{
+  font-size: 10px;
+  color: var(--White);
+  padding: 10px;
+}
+
+/* phone app */
+.case{
+  position: absolute;
+  top: 20px;
+  left: 15%;
+  height: 540px;
+  width: 280px;
+  background-color: var(--White);
+  border-radius: 25px;
+  padding: 10px;
+}
+.innerCase{
+  background-color: var(--lightGrayishViolet);
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.curve{
+  height: 25px;
+  width: 170px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  top: 2px;
+  left: 22%;
+  background-color: var(--White);
+
+}
+.profile{
+  background-color: var(--lightMagenta);
+  background-image:
+    linear-gradient( to left,
+      var(--lightMagenta), var(--lightViolet)
+    );
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding:  15px 10px 10px;
+}
+.avatar{
+  border-radius: 50%;
+  border: 1.5px #fff solid;
+  width: 20px;
+  height: 20px;
+}
+.profileText{
+  padding-left:10px ;
+}
+.profileName{
+  color: var(--White);
+  font-weight: 700;
+  font-size: 15px;
+}
+.profileRead{
+  color: var(--grayishBlue);
+  font-weight: 400;
+  font-size: 10px;
+}
+/* heading icons */
+.menu{
+ margin-left: 60px;
+}
+.angleLeft{
+  padding-left: 5px;
+}
+.textMessage-left{
+  background-color: hsl(273, 58%, 93%);
+  width: 150px;
+  margin: 7px;
+  padding: 8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 20px;
+}
+.textMessage-left p{
+  color: var(--moderateViolet);
+  font-size: 8px;
+  font-weight: 700;
+}
+.dogImages{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.dogImages img{
+  margin: 5px;
+  width: 50px;
+  border-radius: 10px;
+}
+.rightAlign{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: flex-end;
+}
+.textMessage-right{
+  background-color: var(--White);
+  margin: 7px;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 3px;
+}
+.textMessage-right p{
+  color: #000;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.textMessage-radio{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 7px;
+  padding: 3px;
+  width: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--lightMagenta);
+  background-image:
+    linear-gradient( to right,
+      var(--lightMagenta), var(--lightViolet)
+    );
+
+}
+.textMessage-radio p{
+  color: var(--grayishBlue);
+  font-weight: 300;
+  font-size: 10px;
+}
+.textMessage-radio h2{
+  color: var(--White);
+  font-weight: 700;
+  font-size: 15px;
+}
+span{
+  width: 20px;
+  height: 20px;
+  border: 1px var(--veryLightMagenta) solid;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.input{
+  position: relative;
+}
+input{
+  background-color: var(--White);
+  color: var(--grayishBlue);
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 240px;
+  margin-left: 10px;
+}
+input::placeholder{
+  opacity: 0.5;
+}
+button{
+  background-color:var(--veryDarkDesaturatedViolet) ;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5%;
+  right: 7%;
+
+}
+
+button i{
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 500px){
+  .gradient{
+    width: 50%;
+  }
+  .gradient2{
+    display: none;
+  }
+  .column{
+    position: static;
+    padding: 10px;
+    /* margin: 10px; */
+  }
+  .column p{
+    word-spacing: 0;
+    text-align: center;
+  }
+  .column h1{
+    text-align: center;
+  }
+}
